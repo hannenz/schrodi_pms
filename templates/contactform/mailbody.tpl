@@ -2,11 +2,11 @@ Eine Kontaktanfrage ist über das Formular auf der Website eingegangen:
 
 8<-------------8<-------------8<-------------8<-------------8<-------------
 
+Firma: {VAR:company}
+
 Anrede: {VAR:salutation}
 
-Name:   {VAR:name}
-
-Firma:  {VAR:company}
+Name:   {VAR:firstname} {VAR:lastname}
 
 E-Mail: {VAR:email}
 

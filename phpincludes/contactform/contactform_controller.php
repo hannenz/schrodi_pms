@@ -62,7 +62,7 @@ class ContactformController extends Controller {
 
 					$ret = $this->Mail->send(array(
 						'recipient' => $this->recipientEmail,
-						'subject' => 'Kontaktanfrage SCOPE Architekten Webformular',
+						'subject' => 'Kontaktanfrage Schrodi PMS Webformular',
 						'text' => $text,
 						'html' => $html
 					));
