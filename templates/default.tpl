@@ -21,13 +21,13 @@
 	<body id="top">
 		<header class="main-header">
 			<div class="inner-bound">
-				<a href="#top"><img class="logo" src="/img/logo.svg" alt="" /></a>
+				<a href="{PAGEURL:2}#top"><img class="logo" src="/img/logo.svg" alt="" /></a>
 				<nav class="main-nav">
 					<ul>
-						<li><a href="#portfolio">Leistungen</a></li>
-						<li><a href="#foerderprogramme">Förderprogramme</a></li>
-						<!-- <li><a href="#referenzen">Referenzen</a></li> -->
-						<li><a href="#contact">Kontakt</a></li>
+						<li><a href="{PAGEURL:2}#portfolio">Leistungen</a></li>
+						<li><a href="{PAGEURL:2}#foerderprogramme">Förderprogramme</a></li>
+						<!-- <li><a href="{PAGEURL:2}#referenzen">Referenzen</a></li> -->
+						<li><a href="{PAGEURL:2}#contact">Kontakt</a></li>
 					</ul>
 				</nav>
 				<nav class="main-nav--mobile">
