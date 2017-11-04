@@ -2,13 +2,13 @@
 
 <hr>
 
-<dl>
-	<dt> Firma:</dt><dd> {VAR:company}</dd>
-	<dt> Anrede:</dt><dd> {VAR:salutation}</dd>
-	<dt> Name:</dt><dd> {VAR:firstname} {VAR:lastname}</dd>
-	<dt> E-Mail:</dt><dd> {VAR:email}</dd>
-	<dt> Nachricht:</dt><dd> {VAR:message}</dd>
-</dl>
+<table style="width:100%; border-collapse:collapse" cellspacing="0" borderspacing="0">
+	<tr><td> Firma:</td><td> {VAR:company}</td></tr>
+	<tr><td> Anrede:</td><td> {VAR:salutation}</td></tr>
+	<tr><td> Name:</td><td> {VAR:firstname} {VAR:lastname}</td></tr>
+	<tr><td> E-Mail:</td><td> {VAR:email}</td></tr>
+	<tr><td> Nachricht:</td><td> {VAR:message}</td></tr>
+</table>
 
 <hr>
 

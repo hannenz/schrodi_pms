@@ -26,7 +26,7 @@
 					<ul>
 						<li><a href="#portfolio">Leistungen</a></li>
 						<li><a href="#foerderprogramme">Förderprogramme</a></li>
-						<li><a href="#referenzen">Referenzen</a></li>
+						<!-- <li><a href="#referenzen">Referenzen</a></li> -->
 						<li><a href="#contact">Kontakt</a></li>
 					</ul>
 				</nav>
@@ -36,7 +36,7 @@
 						<option value="welcome">Start</option>
 						<option value="portfolio">Leistungen</option>
 						<option value="foerderprogramme">Förderprogramme</option>
-						<option value="referenzen">Referenzen</option>
+						<!-- <option value="referenzen">Referenzen</option> -->
 						<option value="contact">Kontakt</option>
 						<option value="map">Anfahrt</option>
 					</select>
@@ -63,13 +63,13 @@
 				{LOOP CONTENT(8)}{ENDLOOP CONTENT}
 			</div>
 		</section>
-		<section id="referenzen" class="section">
-			<div class="main-content">
-				{IF({LAYOUTMODE})}<pre>Referenzen</pre>{ENDIF}
-				{LOOP CONTENT(9)}{ENDLOOP CONTENT}
-				{INCLUDE:PATHTOWEBROOT."phpincludes/references/references_controller.php"}
-			</div>
-		</section>
+		<!-- <section id="referenzen" class="section"> -->
+		<!-- 	<div class="main&#45;content"> -->
+		<!-- 		{IF({LAYOUTMODE})}<pre>Referenzen</pre>{ENDIF} -->
+		<!-- 		{LOOP CONTENT(9)}{ENDLOOP CONTENT} -->
+		<!-- 		{INCLUDE:PATHTOWEBROOT."phpincludes/references/references_controller.php"} -->
+		<!-- 	</div> -->
+		<!-- </section> -->
 		<section id="contact" class="section">
 			<div class="main-content">
 				{IF({LAYOUTMODE})}<pre>Kontaktformular</pre>{ENDIF}
