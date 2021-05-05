@@ -13,7 +13,7 @@ class ContactformController extends Controller {
 	 * @var string
 	 * Contact mail recipient address
 	 */
-	protected $recipientEmail = 'peter.schrodi@t-online.de';	
+	protected $recipientEmail = 'peter.schrodi@t-online.de';
 	
 	/*
 	 * @var Object
