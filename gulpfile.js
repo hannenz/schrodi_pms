@@ -48,12 +48,18 @@ var settings = {
 	},
 	
 	jsvendor: {
-		src:	'./src/js/vendor/*.js',
+		src:	[
+			'./src/js/vendor/*.js',
+			'./node_modules/mapbox-gl/dist/mapbox-gl.js'
+		],
 		dest:	'./js/vendor/',
 	},
 	
 	cssvendor: {
-		src:	'./src/css/vendor/**/*.css',
+		src:	[
+			'./src/css/vendor/**/*.css',
+			'./node_modules/mapbox-gl/dist/mapbox-gl.css'
+		],
 		dest:	'./css/vendor/'
 	},
 	

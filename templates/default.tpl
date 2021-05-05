@@ -9,13 +9,15 @@
 	 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link rel="stylesheet" href="/css/main.css">
-		<link rel="stylesheet" href="/css/vendor/leaflet.css">
+		<!-- <link rel="stylesheet" href="/css/vendor/leaflet.css"> -->
+		<link rel="stylesheet" href="/css/vendor/mapbox-gl.css">
 
 		{LAYOUTMODE_STARTSCRIPT}
 		{IF (!{LAYOUTMODE})}
 			<script src="/js/vendor/jquery.min.js"></script>
 			<script src="/js/vendor/flickity.pkgd.min.js"></script>
-			<script src="/js/vendor/leaflet.js"></script>
+			<!-- <script src="/js/vendor/leaflet.js"></script> -->
+			<script src="/js/vendor/mapbox-gl.js"></script>
 		{ENDIF}
 	</head>
 	<body id="top">
