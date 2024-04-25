@@ -3,9 +3,9 @@ AddDefaultCharset UTF-8
 RewriteEngine on
 RewriteBase /
 
-php_flag display_startup_errors off
-php_flag display_errors off
-php_flag html_errors off
+# php_flag display_startup_errors on
+# php_flag display_errors on
+# php_flag html_errors on
 
 # SEO: redirect to homepage when URL is blank domain
 RewriteRule ^$ /de/2/Home.html [R=301,L]

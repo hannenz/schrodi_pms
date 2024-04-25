@@ -7,8 +7,6 @@
  */
 namespace PMS;
 
-use Contentomat\Debug;
-use Contentomat\PsrAutoloader;
 use Contentomat\Controller;
 use Contentomat\Contentomat;
 
@@ -83,10 +81,4 @@ class MapsController extends Controller {
 		$this->content = $this->parser->parseTemplate($this->templatesPath . 'map.tpl');
 	}
 }
-
-$autoLoad = new PsrAutoloader();
-$autoLoad->addNamespace('PMS', PATHTOWEBROOT . 'phpincludes/classes');
-
-$ctl = new MapsController();
-$content .= $ctl->work();
-?>
+$content = (new MapsController())->work();

@@ -1,11 +1,10 @@
 <?php
 namespace PMS;
 
-use \Contentomat\Debug;
-use \Contentomat\PsrAutoloader;
 use \Contentomat\Controller;
 use \Contentomat\Mail;
 use \Exception;
+use PMS\ContactformController as PMSContactformController;
 
 class ContactformController extends Controller {
 
@@ -83,11 +82,4 @@ class ContactformController extends Controller {
 		}
 	}
 }
-
-$autoLoad = new PsrAutoloader();
-$autoLoad->addNamespace('Contentomat', INCLUDEPATHTOADMIN . 'classes');
-$autoLoad->addNamespace('Scope', INCLUDEPATH . 'phpincludes/classes');
-
-$ctl = new ContactformController();
-$content .= $ctl->work();
-?>
+$content = (new ContactformController())->work();

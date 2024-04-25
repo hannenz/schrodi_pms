@@ -45,7 +45,7 @@
 				</nav>
 			</div>
 		</header>
-			{INCLUDE:PATHTOWEBROOT."phpincludes/slideshow/slideshow_controller.php"}
+			{INCLUDE:PATHTOWEBROOT."phpincludes/slideshow/SlideshowController.php"}
 		
 		<section id="welcome" class="section">
 			<div class="main-content">
@@ -65,13 +65,6 @@
 				{LOOP CONTENT(8)}{ENDLOOP CONTENT}
 			</div>
 		</section>
-		<!-- <section id="referenzen" class="section"> -->
-		<!-- 	<div class="main&#45;content"> -->
-		<!-- 		{IF({LAYOUTMODE})}<pre>Referenzen</pre>{ENDIF} -->
-		<!-- 		{LOOP CONTENT(9)}{ENDLOOP CONTENT} -->
-		<!-- 		{INCLUDE:PATHTOWEBROOT."phpincludes/references/references_controller.php"} -->
-		<!-- 	</div> -->
-		<!-- </section> -->
 		<section id="contact" class="section">
 			<div class="main-content">
 				{IF({LAYOUTMODE})}<pre>Kontaktformular</pre>{ENDIF}

@@ -1,0 +1,5 @@
+{
+    "require": {
+        "halma/contentomat": "^1.23"
+    }
+}

@@ -1,10 +1,10 @@
 <?php
 /**
- * references_controller
+ * slideshow_controller
  *
  * @author Johannes Braun <j.braun@agentur-halma.de>
  * @version $Id$
- * @copyright Johannes Braun <j.braun@agentur-halma.de>, 16 Sep, 2017
+ * @copyright Johannes Braun <j.braun@agentur-halma.de>, 17 Juli, 2017
  * @package pms
  */
 namespace PMS;
@@ -13,9 +13,8 @@ use Contentomat\PsrAutoloader;
 use Contentomat\Controller;
 use Contentomat\Contentomat;
 use Contentomat\Gallery\Gallery;
-use Contentomat\Debug;
 
-class ReferencesController extends \Contentomat\Controller {
+class SlideshowController extends \Contentomat\Controller {
 
 	/**
 	 * @var Object
@@ -25,13 +24,13 @@ class ReferencesController extends \Contentomat\Controller {
 	/**
 	 * @var int		ID of the category used for the slideshow images
 	 */
-	protected $categoryId = 4;
+	protected $categoryId = 3;
 
 
 	public function init() {
 		parent::init();
 		$this->Gallery = new Gallery();
-		$this->templatesPath = PATHTOWEBROOT . 'templates/references/';
+		$this->templatesPath = PATHTOWEBROOT . 'templates/slideshow/';
 
 		$cmt = Contentomat::getContentomat();
 		$applicationData = $cmt->getVar('applicationData');
@@ -40,7 +39,7 @@ class ReferencesController extends \Contentomat\Controller {
 		}
 	}
 
-	public function initActions() {
+	public function initActions($action = '') {
 		parent::initActions();
 	}
 
@@ -49,18 +48,17 @@ class ReferencesController extends \Contentomat\Controller {
 			'orderBy' => 'gallery_image_position',
 			'orderDir' => 'ASC'
 		];
-		$references = $this->Gallery->getImagesInCategory($this->categoryId, $options);
+		$this->images = $this->Gallery->getImagesInCategory($this->categoryId, $options);
 
-		$this->parser->setParserVar('references', $references);
-		$this->content = $this->parser->parseTemplate($this->templatesPath . 'default.tpl');
+		$this->parser->setParserVar('slideshow_images', $this->images);
+		$this->content = $this->parser->parseTemplate($this->templatesPath . 'slideshow.tpl');
 	}
 }
 
-$autoLoad = new PsrAutoloader();
-$autoLoad->addNamespace('Contentomat', PATHTOADMIN . 'classes');
-$autoLoad->addNamespace('Contentomat\Gallery', PATHTOADMIN . 'classes/app_gallery');
-
-$ctl = new ReferencesController ();
-$content = $ctl->work();
-?>
-
+// $autoLoad = new PsrAutoloader();
+// $autoLoad->addNamespace('Contentomat', PATHTOADMIN . 'classes');
+// $autoLoad->addNamespace('Contentomat\Gallery', PATHTOADMIN . 'classes/app_gallery');
+//
+// $ctl = new SlideshowController();
+// $content = $ctl->work();
+// ?>
